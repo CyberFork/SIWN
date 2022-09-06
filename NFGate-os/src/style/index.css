@@ -1,0 +1,106 @@
+@import "./dynamic-button.css";
+@import "./card.css";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom styles */
+@layer utilities {
+  .logo-filter {
+    filter: url(#threshold) blur(0.6px);
+  }
+
+  #text1,
+  #text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+    text-align: center;
+    user-select: none;
+    color: #fff;
+  }
+
+  /* polygon_button: "transition-alldelay-500 delay-500 duration-700 mx-4 text-gray-300 group hover:text-black shadow-lg bg-gradient-to-r  shadow-purple-800 from-purple-600  to-purple-400 hover:from-purple-600  hover:via-yellow-50 hover:to-purple-400 rounded-md inline-flex items-center text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 py-2 px-4",
+  bsc_button: "transition-all delay-500 duration-700 mx-4 text-gray-300 group hover:text-black bg-gradient-to-r shadow-lg shadow-yellow-700 from-yellow-500 to-gray-800 hover:from-yellow-500 hover:via-white hover:to-black rounded-md inline-flex items-center text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 py-2 px-4", */
+}
+
+
+@layer components {
+  
+  @keyframes scaleDrawWithoutRotate {
+            
+    0% {
+         
+         transform: scale3d(2.5, 2.5, 2.5);
+     }
+   
+     25% {
+       transform: scale3d(1.25, 1.25, 1.25);
+     }
+     
+     50% {
+       transform: scale3d(2.5, 2.5, 2.5);
+     }
+     
+     75% {
+       transform: scale3d(1.25, 1.25, 1.25);
+     }
+   
+     100% {
+       transform: scale3d(2.5, 2.5, 2.5);
+     }
+   
+   }
+     
+   
+      #bg-img{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       overflow: hidden;
+      }
+           .base-img-body {
+             width: 100vw;
+            height: 100vh;
+            position: fixed;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            
+           }  
+}
+
+@layer base {
+  .eth_button {
+    @apply text-gray-300  transition-all delay-500 duration-700 mx-4  group  hover:text-black  w-100 bg-gradient-to-r  shadow-lg shadow-gray-600 from-gray-600 to-gray-400 hover:shadow-gray-600 hover:from-gray-600 hover:to-gray-400 hover:via-white  rounded-md inline-flex items-center text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 py-2 px-4
+  }
+  @font-face {
+    font-family: 'Kolker Brush', cursive;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Outfit:wght@500&display=swap);
+  }
+  @font-face {
+    font-family: 'Stalinist One', cursive;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Stalinist+One&display=swapp);
+  }
+  @font-face {
+    font-family: 'Carter One', cursive;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Carter+One&display=swap);
+  }
+
+
+  @font-face {
+    font-family: 'Orbitron Bold', cursive;
+    font-weight: 400;
+    src: url("../assets/font/bebas_neue_regular.otf");
+  }
+}
