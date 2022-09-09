@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is a login to a third party page</h1>
+        <button onclick="login()">Login</button>
+    </div>
+<script>
+    function login() {
+
+        window.top.postMessage({
+            userInfo: {
+                address: `test#1234567890@ethereum`,
+                header: 'http://www.baidu.com',
+                id: '1234567890',
+            }
+        }, 'http://www.baidu.com')
+    }
+</script>
+</body>
+</html>

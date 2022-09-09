@@ -1,0 +1,122 @@
+@media screen and (max-width: 1300px) {
+  .page-layout .page-right {
+    display: none;
+  }
+  .s-communities.p-comm {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .page-layout {
+    max-width: 990px;
+    .page-center {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nft-detail {
+    .flex {
+      flex-direction: column;
+      > div:first-child {
+        width: 100%;
+      }
+      > div:last-child {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        border-left: 0;
+      }
+    }
+  }
+  .s-communities.p-comm {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .header-logo {
+    display: none;
+  }
+  .menu-flod {
+    display: inline-block;
+  }
+  .s-communities {
+    grid-template-columns: 1fr 1fr;
+    .flex {
+      .btn {
+        order: -1;
+        margin-left: auto;
+        margin-top: -1rem;
+      }
+    }
+  }
+  .page-layout .page-left {
+    display: none;
+  }
+  .home-trending-item-select {
+    display: block;
+  }
+  .home-trending-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header-theme {
+    display: none;
+  }
+  .header .ant-btn-primary {
+    display: none;
+  }
+  .header-search {
+    width: 86%;
+  }
+  .user-menu .header-theme-switch {
+    display: inline-flex;
+  }
+  .user-head-address {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .page {
+    padding: 0 0.125rem;
+  }
+  .home-icon-desc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .nft-detail {
+    .attributes {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .nft-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .s-wallet {
+    .btn {
+      justify-content: space-between;
+      padding: 0 1rem;
+      > div:first-child {
+        width: auto;
+      }
+      > div:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+  .s-communities {
+    grid-template-columns: 1fr;
+  }
+  .s-communities.p-comm {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,93 @@
+@import '~antd/dist/antd.css';
+@import '~react-virtualized/styles.css';
+@import '~swiper/css';
+
+[theme=light]:root {
+  --header-bg: #fff;
+  --header-bd: #d9d9d9;
+  --header-search-bg: #edf2f7;
+  --header-search-color: #999;
+  --header-theme-bd: #ccc;
+  --theme-fill: #333;
+  --body-bg: #f1f1f1;
+  --header-theme-hover: #eee;
+  --page-block: #fff;
+  --container-bd: #d9d9d9;
+  --container-bg: #fff;
+  --nav-color: #111;
+  --nav-hover: #edf2f7;
+  --nav-selected-color: #40a9ff;
+  --color: #111;
+  --home-edit-bg: #f1f2f3;
+  --trending-bg: #f1f2f3;
+  --drop-bg: rgba(66, 66, 66, 0.75);
+  --gray: #666;
+  --unread: #f00;
+  --unread-color: #fff;
+  --like: #168103;
+  --unlike: #a51a1a;
+  --save: #1890ff;
+  --banner: #d5e1f6;
+  --color-error: #ff4d4f;
+  --color-success: #45941a;
+}
+
+[theme=dark]:root {
+  --header-bg: #17181b;
+  --header-bd: #444;
+  --header-search-bg: #27292d;
+  --header-search-color: #999;
+  --header-theme-bd: #666;
+  --theme-fill: #eee;
+  --body-bg: #17181b;
+  --header-theme-hover: #222;
+  --page-block: #111;
+  --container-bd: #3c3c3c;
+  --container-bg: #1e2024;
+  --nav-color: #eee;
+  --nav-hover: #3a425c;
+  --nav-selected-color: #40a9ff;
+  --color: #edeee1;
+  --home-edit-bg: #33363d;
+  --trending-bg: #33363d;
+  --drop-bg: rgba(0, 0, 0, 0.75);
+  --gray: #888;
+  --unread: #f00;
+  --unread-color: #fff;
+  --like: #39b506;
+  --unlike: #c73333;
+  --save: #1890ff;
+  --banner: #d5e1f6;
+  --color-error: #ff4d4f;
+  --color-success: #52c41a;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--body-bg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.container {
+  border-radius: 1rem;
+  border: 1px solid var(--container-bd);
+  background: var(--container-bg);
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+}
